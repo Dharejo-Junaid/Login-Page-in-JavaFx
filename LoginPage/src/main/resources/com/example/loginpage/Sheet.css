@@ -1,0 +1,16 @@
+#mainAnchor{
+    -fx-background-color: transparent;
+}
+
+#anchor1{
+    -fx-background-color: linear-gradient(to top right, #ff2c02, orange);
+    -fx-background-radius: 30px;
+}
+
+#anchor2{
+    -fx-background-color: white;
+}
+
+.button: hover{
+    -fx-text-fill: #0ed0bd;
+}

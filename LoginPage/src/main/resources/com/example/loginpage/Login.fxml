@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Sheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpage.LoginController">
+   <children>
+      <AnchorPane fx:id="anchor2" layoutX="46.0" layoutY="70.0" prefHeight="261.0" prefWidth="254.0">
+         <children>
+            <TextField fx:id="username" layoutX="22.0" layoutY="77.0" prefHeight="25.0" prefWidth="211.0" promptText="Username" style="-fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+               <font>
+                  <Font name="Lucida Bright" size="16.0" />
+               </font>
+            </TextField>
+            <Text layoutX="94.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: orange;" text="Login">
+               <font>
+                  <Font name="Lucida Bright" size="25.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="password" layoutX="22.0" layoutY="139.0" prefHeight="25.0" prefWidth="211.0" promptText="Password" style="-fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+               <font>
+                  <Font name="Lucida Bright" size="16.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="loginButton" alignment="CENTER" layoutX="90.0" layoutY="200.0" onAction="#loginButtonAction" prefHeight="30.0" prefWidth="75.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-text-fill: white;" text="Login">
+               <font>
+                  <Font name="Lucida Bright" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor1" layoutX="40.0" layoutY="34.0" prefHeight="333.0" prefWidth="267.0">
+         <children>
+            <JFXToggleButton fx:id="openButton" layoutX="95.0" layoutY="182.0" onAction="#openButtonAction" prefHeight="30.0" prefWidth="41.0" style="-fx-text-fill: white;" text=" " toggleColor="#0ed0bd">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </JFXToggleButton>
+            <Label fx:id="mainLabel" alignment="CENTER" layoutY="152.0" prefHeight="30.0" prefWidth="267.0" style="-fx-text-fill: white;" text="Open">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="214.0" layoutY="14.0" onAction="#xButtonAction" prefHeight="29.0" prefWidth="31.0" ripplerFill="#10c0cd" text="X" textFill="WHITE" fx:id="xButton">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mButton" layoutX="172.0" layoutY="6.0" onAction="#mButtonAction" prefHeight="29.0" prefWidth="36.0" ripplerFill="#10c0cd" text="_" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
